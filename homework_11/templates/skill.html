@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Найдено со скиллом {{ input_skill }}: {{ total_candidates }}</h1>
+{% for id_candidate in id_candidates %}
+<p><a href="/candidates/{{ id_candidate }}"> {{ id_candidates[id_candidate] }}</a></p>
+{% endfor %}
+</body>
+</html>
